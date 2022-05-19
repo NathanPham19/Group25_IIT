@@ -1,0 +1,126 @@
+  
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #2C3333 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.container {
+    display: grid;
+    height: 89vh;
+    width: 150vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr;
+    grid-template-areas:
+        "nav nav"
+        "sidebar main"
+        "sidebar content";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #2C3333;
+    margin: 30px;
+    left: 50%;
+    top: 50%;
+    border-radius: 25px;
+}
+
+.p{
+    background-color: #F5F2E7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+    background-color: transparent;
+    color: white;
+    
+
+}
+  
+nav {
+    background: #395B64;
+    grid-area: nav;
+    border-radius: 9px;
+    padding-top: 9px;
+    margin: 0;
+}
+  
+main {
+    background: #38A3A5;
+    grid-area: main;
+    border-radius: 9px;
+    padding-top: 9px;
+}
+  
+#sidebar {
+    background: #38A3A5;
+    grid-area: sidebar;
+    border-radius: 9px;
+    padding-top: 9px;
+}
+  
+
+  
+#content {
+    background: #38A3A5;
+    grid-area: content;
+    border-radius: 9px;
+    padding-top: 9px;
+}
+  
+
+  
+
+  
+a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+  
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 4.4fr 1.2fr 1.2fr ;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main"
+            "content";
+    }
+}
+
+h1{
+    margin-bottom: 5px;
+    margin-top: 9px;
+
+  }
+
+.btn{
+    background-color: #F5F2E7;
+    height: 65px;
+    width: 150px;
+    border-radius: 10px;
+    border-color: #F5F2E7;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: #a6a49c;
+    border-color: #a6a49c;
+}
+
+
+
